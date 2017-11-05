@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://ui/pointer.gd" type="Script" id=1]
+[ext_resource path="res://ui/pointer-highlight.tex" type="Texture" id=2]
+
+[node name="Pointer" type="Node2D"]
+
+transform/pos = Vector2( 200, -200 )
+script/script = ExtResource( 1 )
+
+[node name="PointerHighlightSprite" type="Sprite" parent="."]
+
+z/z = 1000
+texture = ExtResource( 2 )
+modulate = Color( 0.447059, 0.784314, 0.523468, 1 )
+
+

@@ -4,7 +4,7 @@ signal enable_pointer_highlight
 signal disable_pointer_highlight
 
 func _ready():
-	var pointerTexture = load("res://textures/pointer.tex")
+	var pointerTexture = load("res://ui/pointer.tex")
 	var pointerSize = pointerTexture.get_size()
 	var hotspot = pointerSize * 0.5
 	Input.set_custom_mouse_cursor(pointerTexture, hotspot)

@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://room-ready.gd" type="Script" id=1]
+[ext_resource path="res://escape-to-quit.gd" type="Script" id=2]
+[ext_resource path="res://ui/pointer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://inventory/inventory.tscn" type="PackedScene" id=4]
+[ext_resource path="res://rooms/treasure/treasure-room.tscn" type="PackedScene" id=5]
+
+[node name="Master" type="Node"]
+
+[node name="GlobalEvents" type="Node" parent="."]
+
+editor/display_folded = true
+
+[node name="RoomReady" type="Node" parent="GlobalEvents"]
+
+script/script = ExtResource( 1 )
+
+[node name="PressEscapeToQuit" type="Node" parent="GlobalEvents"]
+
+script/script = ExtResource( 2 )
+
+[node name="Pointer" parent="." instance=ExtResource( 3 )]
+
+[node name="Inventory" parent="." instance=ExtResource( 4 )]
+
+[node name="CurrentRoom" type="Node" parent="."]
+
+[node name="TreasureRoom" parent="CurrentRoom" instance=ExtResource( 5 )]
+
+

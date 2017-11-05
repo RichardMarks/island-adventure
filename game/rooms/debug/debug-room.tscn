@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=1]
 
-[ext_resource path="res://scripts/inventory.gd" type="Script" id=1]
-[ext_resource path="res://scripts/pointer.gd" type="Script" id=2]
-[ext_resource path="res://textures/pointer-highlight.tex" type="Texture" id=3]
-[ext_resource path="res://textures/key.tex" type="Texture" id=4]
-[ext_resource path="res://scripts/key.gd" type="Script" id=5]
+[ext_resource path="res://inventory/inventory.gd" type="Script" id=1]
+[ext_resource path="res://ui/pointer.gd" type="Script" id=2]
+[ext_resource path="res://ui/pointer-highlight.tex" type="Texture" id=3]
+[ext_resource path="res://inventory/key.tex" type="Texture" id=4]
+[ext_resource path="res://inventory/key.gd" type="Script" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 
